@@ -13,11 +13,12 @@ function [ loss, probs, dscore ] = your_loss_function( score, label,w1,w2,w3,reg
 % store them in loss, probs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               your code
-%%！！--如果要运行的话，需要将原项目文件里three_layer_net.m的！！------
+%%！！--如果要运行的话，有两种方法：
+%%！！1.从https://github.com/hanghang2333/fanhan   下载完整代码导入matlab路径，在matlab里输入run即可运行。
+%%！！2.需要将原项目文件里three_layer_net.m的！！------
 %%！！--调用softmax函数的语句改为调用your_loss_function。！！----------
-%%！！--并且我们将正则惩罚项加在这个文件里，所以：需要将！！-------------
+%%！！--并且由于我们将正则惩罚项加在这个文件里，所以：需要将！！-------------
 %%！！--three_layer_net.m里的这一过程去除。！！---------------------
-%%！！--即本文就输出已经是最后计算的损失函数值loss。！！----------------
 %%！！--有运行问题请email:ansjmsmw@icloud.com !!----------------------
 %------------使用的是tanh激活函数，不能合理运行-------------
 %temp_score=exp(-2*score);
